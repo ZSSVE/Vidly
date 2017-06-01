@@ -197,13 +197,33 @@
     <Compile Include="Migrations\201706012025421_UpdateNamesToMembershipTypes.Designer.cs">
       <DependentUpon>201706012025421_UpdateNamesToMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706012055319_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201706012055319_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201706012055319_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706012108104_addNameToMembershipModel.cs" />
+    <Compile Include="Migrations\201706012108104_addNameToMembershipModel.Designer.cs">
+      <DependentUpon>201706012108104_addNameToMembershipModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706012126148_AddMovies.cs" />
+    <Compile Include="Migrations\201706012126148_AddMovies.Designer.cs">
+      <DependentUpon>201706012126148_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706012130037_PopulateGenres.cs" />
+    <Compile Include="Migrations\201706012130037_PopulateGenres.Designer.cs">
+      <DependentUpon>201706012130037_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706012205341_AddDateInfoToMovies.cs" />
+    <Compile Include="Migrations\201706012205341_AddDateInfoToMovies.Designer.cs">
+      <DependentUpon>201706012205341_AddDateInfoToMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\MovieList.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -252,6 +272,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -300,6 +321,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706012025421_UpdateNamesToMembershipTypes.resx">
       <DependentUpon>201706012025421_UpdateNamesToMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706012055319_AddBirthdateToCustomer.resx">
+      <DependentUpon>201706012055319_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706012108104_addNameToMembershipModel.resx">
+      <DependentUpon>201706012108104_addNameToMembershipModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706012126148_AddMovies.resx">
+      <DependentUpon>201706012126148_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706012130037_PopulateGenres.resx">
+      <DependentUpon>201706012130037_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706012205341_AddDateInfoToMovies.resx">
+      <DependentUpon>201706012205341_AddDateInfoToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
