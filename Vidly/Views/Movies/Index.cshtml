@@ -1,0 +1,25 @@
+﻿@using Vidly.Models
+@model Vidly.ViewModels.MovieList
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Movies.Count == 0)
+{
+    <p>No movie is available!</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Movies</th>
+        </tr>
+        @foreach (var movie in Model.Movies)
+        {
+        <tr>
+            <td>@movie.Name (@movie.Id)</td>
+        </tr>
+        }
+    </table>
+}
